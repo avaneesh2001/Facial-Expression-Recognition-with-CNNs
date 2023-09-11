@@ -10,7 +10,7 @@ For this project, I utilized the 'Face expression recognition' dataset from Kagg
 
 The dataset is organized into seven subfolders, one for each emotion category. This structure makes it convenient to use TensorFlow's 'flow from directory' method for data loading.
 
-![Face expression recognition dataset samples](https://github.com/avaneesh2001/Facial-Expression-Recognition-with-CNNs/blob/main/Images/face%20emotion%20recognition.jpg)
+<img src = "https://github.com/avaneesh2001/Facial-Expression-Recognition-with-CNNs/blob/main/Images/face%20emotion%20recognition.jpg" width = 750>(Face expression recognition dataset samples)
 
 ## Model Architecture
 
