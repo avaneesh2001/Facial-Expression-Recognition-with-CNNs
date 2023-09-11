@@ -73,7 +73,7 @@ I conducted experiments by varying the number of kernels in Conv2D layers and th
 
 From the comparisons, Model 5 offered the best validation accuracy without excessive overfitting, making it the preferred model architecture for my Facial Expression Recognition task.
 ### Block Diagram
-<img  src="https://github.com/avaneesh2001/Facial-Expression-Recognition-with-CNNs/blob/main/Images/1.png" width = 850>
+<img  src="https://github.com/avaneesh2001/Facial-Expression-Recognition-with-CNNs/blob/main/Images/1.png" width = "850">
 *Block Diagram*
 
 ### Decision to Use a CNN Model
@@ -81,7 +81,7 @@ From the comparisons, Model 5 offered the best validation accuracy without exces
 Initially, I experimented with an Inception CNN architecture to potentially improve model accuracy. However, I encountered overfitting issues despite implementing techniques such as data augmentation, normalization, early stopping, and dropout.
 ![Inception Results](https://github.com/avaneesh2001/Facial-Expression-Recognition-with-CNNs/blob/main/Images/table%20inception.png)
 *Results*
-<img src="https://github.com/avaneesh2001/Facial-Expression-Recognition-with-CNNs/blob/main/Images/2.png" width = 850>
+<img src="https://github.com/avaneesh2001/Facial-Expression-Recognition-with-CNNs/blob/main/Images/2.png" width = "850">
 *Block Diagram*
 
 Given the persistent overfitting problem, I made the decision to switch to a conventional CNN model architecture. CNNs have proven effective in various computer vision tasks, including Facial Expression Recognition.
@@ -110,14 +110,14 @@ In addition to experimenting with different model architectures, I also explored
 *Accuracy and Loss:CNN Trained on FER dataset with augmentation*
 
 ### Confusion Metrix
-<img src="https://github.com/avaneesh2001/Facial-Expression-Recognition-with-CNNs/blob/main/Images/confusion%20matrix.png" width = 700)
+<img src="https://github.com/avaneesh2001/Facial-Expression-Recognition-with-CNNs/blob/main/Images/confusion%20matrix.png" width = "700"/>
 *Confusion Matrix*
 
 ### Model Outputs
 
 
 <img src="https://github.com/avaneesh2001/Facial-Expression-Recognition-with-CNNs/blob/main/Images/output%201.png" width="450" />
-<img src = "https://github.com/avaneesh2001/Facial-Expression-Recognition-with-CNNs/blob/main/Images/output.png" width = "450">
+<img src = "https://github.com/avaneesh2001/Facial-Expression-Recognition-with-CNNs/blob/main/Images/output.png" width = "450"/>
 
 
 **Note:** If you prefer not to run the project locally, you can also view a read-only copy on Kaggle by [clicking here](https://www.kaggle.com/ravaneesh/cv-project-1). This allows you to explore the project without the need for local setup.
