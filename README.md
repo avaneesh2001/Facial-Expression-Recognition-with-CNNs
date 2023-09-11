@@ -107,8 +107,10 @@ In addition to experimenting with different model architectures, I also explored
 ![Confusion Matrix](https://github.com/avaneesh2001/Facial-Expression-Recognition-with-CNNs/blob/main/Images/confusion%20matrix.png)
 
 ### Model Outputs
-![](https://github.com/avaneesh2001/Facial-Expression-Recognition-with-CNNs/blob/main/Images/output%201.png)
-![](https://github.com/avaneesh2001/Facial-Expression-Recognition-with-CNNs/blob/main/Images/output.png)
+
+<img src="https://github.com/avaneesh2001/Facial-Expression-Recognition-with-CNNs/blob/main/Images/output%201.png" width="200" />
+<img src = "https://github.com/avaneesh2001/Facial-Expression-Recognition-with-CNNs/blob/main/Images/output.png" width = "200">
+
 **Note:** If you prefer not to run the project locally, you can also view a read-only copy on Kaggle by [clicking here](https://www.kaggle.com/ravaneesh/cv-project-1). This allows you to explore the project without the need for local setup.
 
 
