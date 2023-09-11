@@ -10,6 +10,8 @@ For this project, I utilized the 'Face expression recognition' dataset from Kagg
 
 The dataset is organized into seven subfolders, one for each emotion category. This structure makes it convenient to use TensorFlow's 'flow from directory' method for data loading.
 
+![Face expression recognition dataset samples](https://github.com/avaneesh2001/Facial-Expression-Recognition-with-CNNs/blob/main/Images/face%20emotion%20recognition.jpg)
+
 ## Model Architecture
 
 ### CNN Architecture Selection
@@ -67,19 +69,46 @@ Based on these results, the model with 2 Fully Connected layers achieved the hig
 
 I conducted experiments by varying the number of kernels in Conv2D layers and the number of neurons in Fully Connected layers. The loss, accuracy, val loss, and val accuracy of each model were used to plot the results.
 
+![Comparision](https://github.com/avaneesh2001/Facial-Expression-Recognition-with-CNNs/blob/main/Images/table.png)
+
 From the comparisons, Model 5 offered the best validation accuracy without excessive overfitting, making it the preferred model architecture for my Facial Expression Recognition task.
+### Block Diagram
+![Block Diagram](https://github.com/avaneesh2001/Facial-Expression-Recognition-with-CNNs/blob/main/Images/1.png)
 
 ### Decision to Use a CNN Model
 
 Initially, I experimented with an Inception CNN architecture to potentially improve model accuracy. However, I encountered overfitting issues despite implementing techniques such as data augmentation, normalization, early stopping, and dropout.
+![Inception Results](https://github.com/avaneesh2001/Facial-Expression-Recognition-with-CNNs/blob/main/Images/table%20inception.png)
+
+![Inception Block Diagram](https://github.com/avaneesh2001/Facial-Expression-Recognition-with-CNNs/blob/main/Images/2.png)
 
 Given the persistent overfitting problem, I made the decision to switch to a conventional CNN model architecture. CNNs have proven effective in various computer vision tasks, including Facial Expression Recognition.
 
 ### Dataset Consideration
 
 In addition to experimenting with different model architectures, I also explored the use of the 'FER2013' (Facial Expression Recognition 2013) dataset available on Kaggle. It contains images along with categories describing the emotion of the person in it. The dataset contains 48×48 pixel grayscale images with 7 different emotions such as Angry, Disgust, Fear, Happy, Sad, Surprise, and Neutral. The task is to categorize each face based on the emotion shown in the facial expression into one of seven categories. The images for 'test' data were pulled from this dataset.
+![Dataset samples](https://github.com/avaneesh2001/Facial-Expression-Recognition-with-CNNs/blob/main/Images/fer%20samples.jpeg)
 
 
+## Performance Metrices
+### Model Evaluation with Test Data
+```
+1795/1795 [==============================] - 13s 7ms/step - loss: 0.7016 - accuracy: 0.7529
+```
+### Plots
+![Accuracy and Loss:Inception Trained on FER dataset](https://github.com/avaneesh2001/Facial-Expression-Recognition-with-CNNs/blob/main/Images/__results___3_0.png)
+![Accuracy and Loss:Inception Trained on FER dataset with augmentation](https://github.com/avaneesh2001/Facial-Expression-Recognition-with-CNNs/blob/main/Images/__results___3_1.png)
+![https://github.com/avaneesh2001/Facial-Expression-Recognition-with-CNNs/blob/main/Images/__results___3_1.png](https://github.com/avaneesh2001/Facial-Expression-Recognition-with-CNNs/blob/main/Images/__results___3_2.png)
+![ Accuracy and Loss:CNN Trained on FER dataset](https://github.com/avaneesh2001/Facial-Expression-Recognition-with-CNNs/blob/main/Images/__results___3_3.png)
+![https://github.com/avaneesh2001/Facial-Expression-Recognition-with-CNNs/blob/main/Images/__results___3_3.png](https://github.com/avaneesh2001/Facial-Expression-Recognition-with-CNNs/blob/main/Images/__results___3_4.png)
+
+### Confusion Metrix
+
+![Confusion Matrix](https://github.com/avaneesh2001/Facial-Expression-Recognition-with-CNNs/blob/main/Images/confusion%20matrix.png)
+
+### Model Outputs
+![](https://github.com/avaneesh2001/Facial-Expression-Recognition-with-CNNs/blob/main/Images/output%201.png)
+![](https://github.com/avaneesh2001/Facial-Expression-Recognition-with-CNNs/blob/main/Images/output.png)
 **Note:** If you prefer not to run the project locally, you can also view a read-only copy on Kaggle by [clicking here](https://www.kaggle.com/ravaneesh/cv-project-1). This allows you to explore the project without the need for local setup.
 
 
